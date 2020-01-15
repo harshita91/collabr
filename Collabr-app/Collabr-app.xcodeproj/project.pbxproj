@@ -17,6 +17,11 @@
 		CC0467A0239EEB3800CA5D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC04679E239EEB3800CA5D2C /* LaunchScreen.storyboard */; };
 		CC0467AB239EEB3800CA5D2C /* Collabr_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0467AA239EEB3800CA5D2C /* Collabr_appTests.swift */; };
 		CC0467B6239EEB3800CA5D2C /* Collabr_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0467B5239EEB3800CA5D2C /* Collabr_appUITests.swift */; };
+		CC5B860023CCD9C500B8D24F /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B85FF23CCD9C500B8D24F /* EventCardView.swift */; };
+		CCB02ECB23C57FFB00DF0EB8 /* EventsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB02ECA23C57FFB00DF0EB8 /* EventsSummaryView.swift */; };
+		CCB944CB23CCB77E0030CD4C /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB944CA23CCB77E0030CD4C /* EventsView.swift */; };
+		CCCF8DD123CEA56E00750260 /* ColorDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF8DD023CEA56E00750260 /* ColorDefinitions.swift */; };
+		CCCF8DD323CEA7AD00750260 /* FontDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF8DD223CEA7AD00750260 /* FontDefinitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		CC0467B1239EEB3800CA5D2C /* Collabr-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Collabr-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0467B5239EEB3800CA5D2C /* Collabr_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collabr_appUITests.swift; sourceTree = "<group>"; };
 		CC0467B7239EEB3800CA5D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5B85FF23CCD9C500B8D24F /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		CCB02ECA23C57FFB00DF0EB8 /* EventsSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsSummaryView.swift; sourceTree = "<group>"; };
+		CCB944CA23CCB77E0030CD4C /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		CCCF8DD023CEA56E00750260 /* ColorDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDefinitions.swift; sourceTree = "<group>"; };
+		CCCF8DD223CEA7AD00750260 /* FontDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDefinitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +115,17 @@
 			children = (
 				CC04678E239EEB3500CA5D2C /* AppDelegate.swift */,
 				CC046793239EEB3500CA5D2C /* SceneDelegate.swift */,
+				CCB02F0C23CCA0C000DF0EB8 /* Constants */,
 				CC046795239EEB3500CA5D2C /* Event.swift */,
+				CCB944CA23CCB77E0030CD4C /* EventsView.swift */,
+				CC5B85FF23CCD9C500B8D24F /* EventCardView.swift */,
 				CC046797239EEB3500CA5D2C /* ContentView.swift */,
 				CC046799239EEB3800CA5D2C /* Assets.xcassets */,
 				CC04679E239EEB3800CA5D2C /* LaunchScreen.storyboard */,
 				CC0467A1239EEB3800CA5D2C /* Info.plist */,
 				CC046790239EEB3500CA5D2C /* Collabr_app.xcdatamodeld */,
 				CC04679B239EEB3800CA5D2C /* Preview Content */,
+				CCB02ECA23C57FFB00DF0EB8 /* EventsSummaryView.swift */,
 			);
 			path = "Collabr-app";
 			sourceTree = "<group>";
@@ -140,6 +154,15 @@
 				CC0467B7239EEB3800CA5D2C /* Info.plist */,
 			);
 			path = "Collabr-appUITests";
+			sourceTree = "<group>";
+		};
+		CCB02F0C23CCA0C000DF0EB8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CCCF8DD023CEA56E00750260 /* ColorDefinitions.swift */,
+				CCCF8DD223CEA7AD00750260 /* FontDefinitions.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +297,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC046796239EEB3500CA5D2C /* Event.swift in Sources */,
+				CC5B860023CCD9C500B8D24F /* EventCardView.swift in Sources */,
 				CC046798239EEB3500CA5D2C /* ContentView.swift in Sources */,
+				CCB944CB23CCB77E0030CD4C /* EventsView.swift in Sources */,
+				CCCF8DD123CEA56E00750260 /* ColorDefinitions.swift in Sources */,
+				CCB02ECB23C57FFB00DF0EB8 /* EventsSummaryView.swift in Sources */,
+				CCCF8DD323CEA7AD00750260 /* FontDefinitions.swift in Sources */,
 				CC04678F239EEB3500CA5D2C /* AppDelegate.swift in Sources */,
 				CC046792239EEB3500CA5D2C /* Collabr_app.xcdatamodeld in Sources */,
 				CC046794239EEB3500CA5D2C /* SceneDelegate.swift in Sources */,
@@ -381,6 +409,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -434,6 +463,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -493,7 +523,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collabr-app.app/Collabr-app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collabr.app/Collabr";
 			};
 			name = Debug;
 		};
@@ -514,7 +544,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collabr-app.app/Collabr-app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Collabr.app/Collabr";
 			};
 			name = Release;
 		};

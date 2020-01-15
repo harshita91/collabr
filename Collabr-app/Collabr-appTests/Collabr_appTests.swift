@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Collabr_app
+@testable import Collabr
 
 class Collabr_appTests: XCTestCase {
 

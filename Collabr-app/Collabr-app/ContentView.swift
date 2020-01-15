@@ -57,7 +57,7 @@ struct MasterView: View {
                     Text("\(event.timestamp!, formatter: dateFormatter)")
                 }
             }.onDelete { indices in
-                self.events.delete(at: indices, from: self.viewContext)
+//                self.events.delete(at: indices, from: self.viewContext)
             }
         }
     }
@@ -73,9 +73,9 @@ struct DetailView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+/*struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        return ContentView().environment(\.managedObjectContext, context)
+        //let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        //return ContentView().environment(\.managedObjectContext, context)
     }
-}
+}*/
