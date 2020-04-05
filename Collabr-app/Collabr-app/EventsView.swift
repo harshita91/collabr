@@ -11,6 +11,8 @@ import SwiftUI
 
 struct EventsView: View {
     
+    @State private var createEvent: Bool = false
+    
     var body: some View {
         
         VStack (alignment: .leading, spacing: 0){
@@ -24,15 +26,19 @@ struct EventsView: View {
                 
                 Button(action: {
                     //TODO: Add create event here
-                    print("Edit button was tapped")
+                    self.createEvent = true
+                    
                 }) {
                     Image(systemName: "plus.circle")
                     .foregroundColor(Color.primaryTextColor)
-                    .font(Font.system(size: 50, weight: .ultraLight))
+                        .font(Font.primaryIconFont)
+                }.sheet(isPresented: self.$createEvent){
+                    EventCreateView()
                 }
+                
             }.padding()
             
-            EventCardView().padding()
+            EventSummaryView()
             
             Spacer()
         }

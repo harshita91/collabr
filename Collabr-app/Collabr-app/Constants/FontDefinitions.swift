@@ -15,4 +15,7 @@ extension Font {
     static let primaryBodyFont = Font.custom("Avenir", size: 21)
     static let secondaryBodyFont = Font.custom("Avenir", size: 14)
     
+    //icon fonts
+    static let primaryIconFont = Font.system(size: 50, weight: .ultraLight)
+    
 }

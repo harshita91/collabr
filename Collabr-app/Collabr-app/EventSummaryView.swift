@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct EventCardView: View {
+struct EventSummaryView: View {
     
     var body: some View {
         
@@ -89,7 +89,7 @@ struct SecondaryContentView: View {
 #if DEBUG
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        EventCardView()
+        EventSummaryView()
     }
 }
 #endif

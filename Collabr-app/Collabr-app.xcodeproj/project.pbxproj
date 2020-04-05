@@ -17,7 +17,9 @@
 		CC0467A0239EEB3800CA5D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC04679E239EEB3800CA5D2C /* LaunchScreen.storyboard */; };
 		CC0467AB239EEB3800CA5D2C /* Collabr_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0467AA239EEB3800CA5D2C /* Collabr_appTests.swift */; };
 		CC0467B6239EEB3800CA5D2C /* Collabr_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0467B5239EEB3800CA5D2C /* Collabr_appUITests.swift */; };
-		CC5B860023CCD9C500B8D24F /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B85FF23CCD9C500B8D24F /* EventCardView.swift */; };
+		CC56E2992439349E00344039 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56E2982439349E00344039 /* EventDetailView.swift */; };
+		CC56E29B243937C000344039 /* EventCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC56E29A243937C000344039 /* EventCreateView.swift */; };
+		CC5B860023CCD9C500B8D24F /* EventSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5B85FF23CCD9C500B8D24F /* EventSummaryView.swift */; };
 		CCB02ECB23C57FFB00DF0EB8 /* EventsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB02ECA23C57FFB00DF0EB8 /* EventsSummaryView.swift */; };
 		CCB944CB23CCB77E0030CD4C /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB944CA23CCB77E0030CD4C /* EventsView.swift */; };
 		CCCF8DD123CEA56E00750260 /* ColorDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF8DD023CEA56E00750260 /* ColorDefinitions.swift */; };
@@ -58,7 +60,9 @@
 		CC0467B1239EEB3800CA5D2C /* Collabr-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Collabr-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0467B5239EEB3800CA5D2C /* Collabr_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collabr_appUITests.swift; sourceTree = "<group>"; };
 		CC0467B7239EEB3800CA5D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC5B85FF23CCD9C500B8D24F /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		CC56E2982439349E00344039 /* EventDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		CC56E29A243937C000344039 /* EventCreateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCreateView.swift; sourceTree = "<group>"; };
+		CC5B85FF23CCD9C500B8D24F /* EventSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSummaryView.swift; sourceTree = "<group>"; };
 		CCB02ECA23C57FFB00DF0EB8 /* EventsSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsSummaryView.swift; sourceTree = "<group>"; };
 		CCB944CA23CCB77E0030CD4C /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
 		CCCF8DD023CEA56E00750260 /* ColorDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDefinitions.swift; sourceTree = "<group>"; };
@@ -118,7 +122,10 @@
 				CCB02F0C23CCA0C000DF0EB8 /* Constants */,
 				CC046795239EEB3500CA5D2C /* Event.swift */,
 				CCB944CA23CCB77E0030CD4C /* EventsView.swift */,
-				CC5B85FF23CCD9C500B8D24F /* EventCardView.swift */,
+				CC56E29C2439486200344039 /* HelperClasses */,
+				CC5B85FF23CCD9C500B8D24F /* EventSummaryView.swift */,
+				CC56E2982439349E00344039 /* EventDetailView.swift */,
+				CC56E29A243937C000344039 /* EventCreateView.swift */,
 				CC046797239EEB3500CA5D2C /* ContentView.swift */,
 				CC046799239EEB3800CA5D2C /* Assets.xcassets */,
 				CC04679E239EEB3800CA5D2C /* LaunchScreen.storyboard */,
@@ -154,6 +161,13 @@
 				CC0467B7239EEB3800CA5D2C /* Info.plist */,
 			);
 			path = "Collabr-appUITests";
+			sourceTree = "<group>";
+		};
+		CC56E29C2439486200344039 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelperClasses;
 			sourceTree = "<group>";
 		};
 		CCB02F0C23CCA0C000DF0EB8 /* Constants */ = {
@@ -297,11 +311,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC046796239EEB3500CA5D2C /* Event.swift in Sources */,
-				CC5B860023CCD9C500B8D24F /* EventCardView.swift in Sources */,
+				CC5B860023CCD9C500B8D24F /* EventSummaryView.swift in Sources */,
 				CC046798239EEB3500CA5D2C /* ContentView.swift in Sources */,
 				CCB944CB23CCB77E0030CD4C /* EventsView.swift in Sources */,
 				CCCF8DD123CEA56E00750260 /* ColorDefinitions.swift in Sources */,
+				CC56E29B243937C000344039 /* EventCreateView.swift in Sources */,
 				CCB02ECB23C57FFB00DF0EB8 /* EventsSummaryView.swift in Sources */,
+				CC56E2992439349E00344039 /* EventDetailView.swift in Sources */,
 				CCCF8DD323CEA7AD00750260 /* FontDefinitions.swift in Sources */,
 				CC04678F239EEB3500CA5D2C /* AppDelegate.swift in Sources */,
 				CC046792239EEB3500CA5D2C /* Collabr_app.xcdatamodeld in Sources */,
