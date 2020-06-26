@@ -1,0 +1,6 @@
+framework module Pods_Collabr {
+  umbrella header "Pods-Collabr-umbrella.h"
+
+  export *
+  module * { export * }
+}

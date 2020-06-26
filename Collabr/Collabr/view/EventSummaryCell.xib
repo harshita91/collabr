@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventSummaryCell" rowHeight="149" id="KGk-i7-Jjw" customClass="EventSummaryCell" customModule="Collabr" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="149"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tomorrow @ 8pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbn-2X-Gs1">
+                        <rect key="frame" x="5" y="0.0" width="111" height="20"/>
+                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                        <color key="textColor" name="textColorSecondary"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCh-6v-nrQ">
+                        <rect key="frame" x="0.0" y="20" width="353" height="114"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Potluck @ Hershey's" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZ1-he-cjH">
+                                <rect key="frame" x="15" y="15" width="190" height="46"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="21"/>
+                                <color key="textColor" name="textColorPrimary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNV-5B-A0b" userLabel="RSVP Summary View" customClass="RSVPSummary" customModule="Collabr" customModuleProvider="target">
+                                <rect key="frame" x="15" y="77" width="160" height="22"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="xvO-v0-8UL"/>
+                                    <constraint firstAttribute="width" constant="160" id="yvA-4k-FaK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ge4-Je-tl6">
+                                <rect key="frame" x="274" y="77" width="64" height="22"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                <state key="normal" title="Directions"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="bgColorSecondary"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vNV-5B-A0b" secondAttribute="bottom" constant="15" id="4cz-pt-6U7"/>
+                            <constraint firstItem="vNV-5B-A0b" firstAttribute="top" secondItem="bZ1-he-cjH" secondAttribute="bottom" constant="16" id="9ow-7D-F3d"/>
+                            <constraint firstItem="bZ1-he-cjH" firstAttribute="leading" secondItem="nCh-6v-nrQ" secondAttribute="leading" constant="15" id="NKQ-OU-H30"/>
+                            <constraint firstItem="vNV-5B-A0b" firstAttribute="leading" secondItem="nCh-6v-nrQ" secondAttribute="leading" constant="15" id="cpv-0q-enD"/>
+                            <constraint firstItem="bZ1-he-cjH" firstAttribute="top" secondItem="nCh-6v-nrQ" secondAttribute="top" constant="15" id="hDx-hg-v0h"/>
+                            <constraint firstAttribute="trailing" secondItem="ge4-Je-tl6" secondAttribute="trailing" constant="15" id="iIq-QT-b7Q"/>
+                            <constraint firstItem="ge4-Je-tl6" firstAttribute="centerY" secondItem="vNV-5B-A0b" secondAttribute="centerY" id="xmw-uA-S8r"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="nCh-6v-nrQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7Ie-d0-MCP"/>
+                    <constraint firstAttribute="trailing" secondItem="nCh-6v-nrQ" secondAttribute="trailing" id="QVg-Tg-bCR"/>
+                    <constraint firstAttribute="bottom" secondItem="nCh-6v-nrQ" secondAttribute="bottom" constant="15" id="fFL-KN-yOi"/>
+                    <constraint firstItem="Fbn-2X-Gs1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="lGj-54-6SX"/>
+                    <constraint firstItem="nCh-6v-nrQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="yD0-bo-eQo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="eventCardView" destination="nCh-6v-nrQ" id="dR7-O2-Svb"/>
+                <outlet property="eventTimeLabel" destination="Fbn-2X-Gs1" id="C9X-Lw-4cH"/>
+                <outlet property="eventTitleLabel" destination="bZ1-he-cjH" id="3F8-yU-O6l"/>
+                <outlet property="rsvpSummaryView" destination="vNV-5B-A0b" id="k0g-fI-ifG"/>
+            </connections>
+            <point key="canvasLocation" x="-351.44927536231887" y="58.59375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="bgColorSecondary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColorPrimary">
+            <color red="0.075000002980232239" green="0.078000001609325409" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColorSecondary">
+            <color red="0.40000000596046448" green="0.40799999237060547" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
